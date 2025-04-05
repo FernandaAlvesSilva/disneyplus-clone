@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';
   --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
@@ -10,6 +10,11 @@
   font-display: block;
   src: url("../../fonts/fa-solid-900.woff2") format("woff2"), url("../../fonts/fa-solid-900.ttf") format("truetype"); }
 
+
+
+
+
+  
 .fas,
 .fa-solid {
   font-weight: 900; 
