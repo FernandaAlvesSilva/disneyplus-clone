@@ -9,7 +9,7 @@
 <body>
     <div class="background-fixed"></div>
    <div class="wrapper">
-    <header class="header">
+    <header class="header" data-header>
         <div class="logo">
             <a class="logo__link" href="/"></a>
         </div>
@@ -64,14 +64,14 @@
                 </li>
 
                 <li class="nav-menu__item dropdown">
-                    <a href="/" class="nav-menu__link">
+                    <a href="/" class="nav-menu__link" data-open-navsubmenu>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </a>
                 
 
                     <!--Submenu-->
 
-                    <ul class="nav-submenu">
+                    <ul class="nav-submenu" data-navsubmenu>
                                 <!--originais-->
                         <li class="nav-submenu__item mobile-hidden">
                             <a href="/" class="nav-submenu__link">
@@ -98,9 +98,9 @@
                     </ul>
                 </li>
             </ul>
-            <div class="user-menu">
+            <div class="user-menu" data-usermenu>
                 <div class="user-menu__background show-hover"></div>
-                <div class="user-menu__current-profile">
+                <div class="user-menu__current-profile" data-open-usermenu>
                     <div class="user-profile user-profile--reverse">
                         <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
                         <span class="user-profile__title">Fernanda</span>
@@ -154,9 +154,10 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav>  
     </header>
+
    </div>
-   <script src="/assets/js/main.js"></script>
+   <script  type="module"  src="/assets/js/main.js"></script>
 </body>
 </html>
