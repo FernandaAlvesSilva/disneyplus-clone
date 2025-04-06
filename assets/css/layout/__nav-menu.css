@@ -1,0 +1,41 @@
+.nav-menu{
+    margin-left: 3.7rem;
+}
+
+.nav-menu__item{
+    display: inline;
+}
+
+.nav-menu__link{
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 3rem 2rem;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+}
+
+.nav-menu__link:hover .nav-menu__text::before{
+    width: 100%;
+}
+
+
+.nav-menu__text{
+    margin-left: 1.1rem;
+    position: relative;
+
+}
+
+.nav-menu__text::before{
+    bottom: -1rem;
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+.nav-menu__item.dropdown{
+    display: none;
+}
