@@ -1,174 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Disney Plus</title>
 </head>
+
 <body>
     <div class="background-fixed"></div>
-   <div class="wrapper">
-    <header class="header" data-header>
-        <div class="logo">
-            <a class="logo__link" href="/"></a>
-        </div>
-        <nav class="header___navigation">
-            <ul class="nav-menu">
-                <!--inicio-->
-                <li class="nav-menu__item">
-                    <a href="/" class="nav-menu__link">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="nav-menu__text">Início</span>
-                    </a>    
-                </li>
+    <div class="wrapper">
+        <header class="header" data-header>
+            <div class="logo">
+                <a class="logo__link" href="/"></a>
+            </div>
+            <nav class="header___navigation">
+                <ul class="nav-menu">
+                    <!--inicio-->
+                    <li class="nav-menu__item">
+                        <a href="/" class="nav-menu__link">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="nav-menu__text">Início</span>
+                        </a>
+                    </li>
 
-                <!--pesquisa-->
-                <li class="nav-menu__item">
-                    <a href="/" class="nav-menu__link">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span class="nav-menu__text">Pesquisa</span>
-                    </a>
-                </li>
+                    <!--pesquisa-->
+                    <li class="nav-menu__item">
+                        <a href="/" class="nav-menu__link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="nav-menu__text">Pesquisa</span>
+                        </a>
+                    </li>
 
-                <!--minha lista-->
-                <li class="nav-menu__item">
-                    <a href="/" class="nav-menu__link">
-                        <i class="fa-solid fa-plus"></i>
-                        <span class="nav-menu__text">Minha Lista</span>
-                    </a>
-                </li>
+                    <!--minha lista-->
+                    <li class="nav-menu__item">
+                        <a href="/" class="nav-menu__link">
+                            <i class="fa-solid fa-plus"></i>
+                            <span class="nav-menu__text">Minha Lista</span>
+                        </a>
+                    </li>
 
-                <!--originais-->
-                <li class="nav-menu__item mobile-hidden">
-                    <a href="/" class="nav-menu__link">
-                        <i class="fa-solid fa-star"></i>
-                        <span class="nav-menu__text">Originais</span>
-                    </a>
-                </li>
+                    <!--originais-->
+                    <li class="nav-menu__item mobile-hidden">
+                        <a href="/" class="nav-menu__link">
+                            <i class="fa-solid fa-star"></i>
+                            <span class="nav-menu__text">Originais</span>
+                        </a>
+                    </li>
 
-                <!--filmes-->
-                <li class="nav-menu__item mobile-hidden">
-                    <a href="/" class="nav-menu__link">
-                        <i class="fa-solid fa-film"></i>
-                        <span class="nav-menu__text">Filmes</span>
-                    </a>
-                </li>
+                    <!--filmes-->
+                    <li class="nav-menu__item mobile-hidden">
+                        <a href="/" class="nav-menu__link">
+                            <i class="fa-solid fa-film"></i>
+                            <span class="nav-menu__text">Filmes</span>
+                        </a>
+                    </li>
 
-                 <!--Series-->
-                 <li class="nav-menu__item mobile-hidden">
-                    <a href="/" class="nav-menu__link">
-                        <i class="fa-solid fa-tv"></i>
-                        <span class="nav-menu__text">Séries</span>
-                    </a>
-                </li>
+                    <!--Series-->
+                    <li class="nav-menu__item mobile-hidden">
+                        <a href="/" class="nav-menu__link">
+                            <i class="fa-solid fa-tv"></i>
+                            <span class="nav-menu__text">Séries</span>
+                        </a>
+                    </li>
 
-                <li class="nav-menu__item dropdown">
-                    <a href="/" class="nav-menu__link" data-open-navsubmenu>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </a>
-                
+                    <li class="nav-menu__item dropdown">
+                        <a href="/" class="nav-menu__link" data-open-navsubmenu>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </a>
 
-                    <!--Submenu-->
 
-                    <ul class="nav-submenu" data-navsubmenu>
-                                <!--originais-->
-                        <li class="nav-submenu__item mobile-hidden">
-                            <a href="/" class="nav-submenu__link">
-                                <i class="fa-solid fa-star"></i>
-                                <span class="nav-submenu__text">Originais</span>
-                            </a>
+                        <!--Submenu-->
+
+                        <ul class="nav-submenu" data-navsubmenu>
+                            <!--originais-->
+                            <li class="nav-submenu__item mobile-hidden">
+                                <a href="/" class="nav-submenu__link">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="nav-submenu__text">Originais</span>
+                                </a>
+                            </li>
+
+                            <!--filmes-->
+                            <li class="nav-submenu__item mobile-hidden">
+                                <a href="/" class="nav-submenu__link">
+                                    <i class="fa-solid fa-film"></i>
+                                    <span class="nav-submenu__text">Filmes</span>
+                                </a>
+                            </li>
+
+                            <!--Series-->
+                            <li class="nav-submenu__item mobile-hidden">
+                                <a href="/" class="nav-submenu__link">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <span class="nav-submenu__text">Séries</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="user-menu" data-usermenu>
+                    <div class="user-menu__background show-hover"></div>
+                    <div class="user-menu__current-profile" data-open-usermenu>
+                        <div class="user-profile user-profile--reverse">
+                            <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
+                            <span class="user-profile__title">Fernanda</span>
+                        </div>
+                    </div>
+                    <ul class="user-menu__profiles show-hover">
+                        <!--perfil 1-->
+                        <li class="user-menu__item">
+                            <div class="user-profile user-profile">
+                                <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
+                                <span class="user-profile__title">Yolanda</span>
+                            </div>
                         </li>
-
-                        <!--filmes-->
-                        <li class="nav-submenu__item mobile-hidden">
-                            <a href="/" class="nav-submenu__link">
-                                <i class="fa-solid fa-film"></i>
-                                <span class="nav-submenu__text">Filmes</span>
-                            </a>
+                        <!--perfil 2-->
+                        <li class="user-menu__item">
+                            <div class="user-profile user-profile">
+                                <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
+                                <span class="user-profile__title">Bia</span>
+                            </div>
                         </li>
-
-                        <!--Series-->
-                        <li class="nav-submenu__item mobile-hidden">
-                            <a href="/" class="nav-submenu__link">
-                                <i class="fa-solid fa-tv"></i>
-                                <span class="nav-submenu__text">Séries</span>
-                            </a>
+                        <!--perfil 3-->
+                        <li class="user-menu__item">
+                            <div class="user-profile user-profile">
+                                <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
+                                <span class="user-profile__title">Poppy</span>
+                            </div>
+                        </li>
+                        <!--perfil 4-->
+                        <li class="user-menu__item">
+                            <div class="user-profile user-profile">
+                                <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
+                                <span class="user-profile__title">Harry</span>
+                            </div>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <div class="user-menu" data-usermenu>
-                <div class="user-menu__background show-hover"></div>
-                <div class="user-menu__current-profile" data-open-usermenu>
-                    <div class="user-profile user-profile--reverse">
-                        <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
-                        <span class="user-profile__title">Fernanda</span>
+                    <ul class="user-menu__options show-hover">
+                        <li class="user-menu__item">
+                            <a href="/" class="user-menu__link">Editar Perfis</a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a href="/" class="user-menu__link">Configurações do Aplicativo</a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a href="/" class="user-menu__link">Conta</a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a href="/" class="user-menu__link">Ajuda</a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a href="/" class="user-menu__link">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="banners">
+                <button class="arrow-slider arrow-slider--left"></button>
+                <button class="arrow-slider arrow-slider--right"></button>
+                <div class="controls-slider">
+                    <button class="controls-slider__item active"></button>
+                    <button class="controls-slider__item"></button>
+                    <button class="controls-slider__item"></button>
+                    <button class="controls-slider__item"></button>
+                    <button class="controls-slider__item"></button>
+                    <button class="controls-slider__item"></button>
+                </div>
+                <div class="banner-slider">
+                    <!--Banner 1-->
+                    <div class="banner-slider__item">
+                        <a href="/" class="banner-slider__link">
+                            <img class="banner-slider__cover" src="/assets/imgs/exemple/banner-exemple.jpeg"
+                                alt="mandalorian">
+                            <img class="banner-slider__title" src="/assets/imgs/exemple/banner-title-exemple.png"
+                                alt="mandalorian">
+                        </a>
+                    </div>
+                    <!--Banner 2-->
+                    <div class="banner-slider__item">
+                        <a href="/" class="banner-slider__link">
+                            <img class="banner-slider__cover" src="/assets/imgs/exemple/banner-exemple.jpeg"
+                                alt="mandalorian">
+                            <img class="banner-slider__title" src="/assets/imgs/exemple/banner-title-exemple.png"
+                                alt="mandalorian">
+                        </a>
+                    </div>
+                    <!--Banner 3-->
+                    <div class="banner-slider__item">
+                        <a href="/" class="banner-slider__link">
+                            <img class="banner-slider__cover" src="/assets/imgs/exemple/banner-exemple.jpeg"
+                                alt="mandalorian">
+                            <img class="banner-slider__title" src="/assets/imgs/exemple/banner-title-exemple.png"
+                                alt="mandalorian">
+                        </a>
+                    </div>
+                    <!--Banner 4-->
+                    <div class="banner-slider__item">
+                        <a href="/" class="banner-slider__link">
+                            <img class="banner-slider__cover" src="/assets/imgs/exemple/banner-exemple.jpeg"
+                                alt="mandalorian">
+                            <img class="banner-slider__title" src="/assets/imgs/exemple/banner-title-exemple.png"
+                                alt="mandalorian">
+                        </a>
+                    </div>
+                    <!--Banner 5-->
+                    <div class="banner-slider__item">
+                        <a href="/" class="banner-slider__link">
+                            <img class="banner-slider__cover" src="/assets/imgs/exemple/banner-exemple.jpeg"
+                                alt="mandalorian">
+                            <img class="banner-slider__title" src="/assets/imgs/exemple/banner-title-exemple.png"
+                                alt="mandalorian">
+                        </a>
+                    </div>
+                    <!--Banner 6-->
+                    <div class="banner-slider__item">
+                        <a href="/" class="banner-slider__link">
+                            <img class="banner-slider__cover" src="/assets/imgs/exemple/banner-exemple.jpeg"
+                                alt="mandalorian">
+                            <img class="banner-slider__title" src="/assets/imgs/exemple/banner-title-exemple.png"
+                                alt="mandalorian">
+                        </a>
                     </div>
                 </div>
-                <ul class="user-menu__profiles show-hover">
-                    <!--perfil 1-->
-                    <li class="user-menu__item">
-                        <div class="user-profile user-profile">
-                            <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
-                            <span class="user-profile__title">Yolanda</span>
-                        </div>
-                    </li>
-                    <!--perfil 2-->
-                    <li class="user-menu__item">
-                        <div class="user-profile user-profile">
-                            <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
-                            <span class="user-profile__title">Bia</span>
-                        </div>
-                    </li>
-                    <!--perfil 3-->
-                    <li class="user-menu__item">
-                        <div class="user-profile user-profile">
-                            <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
-                            <span class="user-profile__title">Poppy</span>
-                        </div>
-                    </li>
-                    <!--perfil 4-->
-                    <li class="user-menu__item">
-                        <div class="user-profile user-profile">
-                            <img src="/assets/imgs/avatar.png" alt="foto perfil" class="user-profile__avatar">
-                            <span class="user-profile__title">Harry</span>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="user-menu__options show-hover">
-                    <li class="user-menu__item">
-                        <a href="/" class="user-menu__link">Editar Perfis</a>
-                    </li>
-                    <li class="user-menu__item">
-                        <a href="/" class="user-menu__link">Configurações do Aplicativo</a>
-                    </li>
-                    <li class="user-menu__item">
-                        <a href="/" class="user-menu__link">Conta</a>
-                    </li>
-                    <li class="user-menu__item">
-                        <a href="/" class="user-menu__link">Ajuda</a>
-                    </li>
-                    <li class="user-menu__item">
-                        <a href="/" class="user-menu__link">Sair</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>  
-    </header>
-    <main>
-        <section class="banners">
-           <div class="banner-slide">
-            <div class="banner-slide__item">
-                <a href="/" class="banner-slide__link">
-                    <img class="banner-slide__cover" src="/assets/imgs/exemple/banner-exemple.jpeg" alt="mandalorian">
-                    <img class="banner-slide__title" src="/assets/imgs/exemple/banner-title-exemple.png" alt="mandalorian">
-                </a>
-            </div>
-           </div>
-        </section>
-    </main>
-   </div>
-   <script  type="module"  src="/assets/js/main.js"></script>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="/assets/js/main.js"></script>
 </body>
+
 </html>

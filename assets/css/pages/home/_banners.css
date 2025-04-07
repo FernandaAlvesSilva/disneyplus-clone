@@ -1,19 +1,30 @@
 .banners{
     padding-top: 9.7rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 
 }
 
-.banner-slide__item{
+.banner-slider{
+    position: relative;
+    display: flex;
+}
+
+
+
+.banner-slider__item{
     margin: 0 auto;
+    flex-shrink: 0;
     width: 90vw;
 }
 
-.banner-slide__link{
+.banner-slider__link{
     display: block;
     position: relative;
 }
 
-.banner-slide__link::before{
+.banner-slider__link::before{
     content: '';
     border: .3rem solid rgba(255, 255, 255, 0);
     position: absolute;
@@ -23,20 +34,39 @@
 }
 
 
-.banner-slide__link:hover::before{
+.banner-slider__link:hover::before{
     border-color:rgba(255, 255, 255, 0.7);
     
 }
 
-.banner-slide__cover{
+.banner-slider__cover{
     border-radius: .5rem;
     width: 100%;
     display: block;
+    box-shadow: #000 0rem 2rem 3rem -2rem;
+    
 }
 
-.banner-slide__title{
+.banner-slider__title{
     left: 0;
     top: 0;
     position: absolute;
     width: 100%;
+}
+
+.banners .arrow-slider--left{
+    position: absolute;
+    left: 3.6rem;
+    z-index: 2;    
+}
+
+.banners .arrow-slider--right{
+    position: absolute;
+    right: 3.6rem;
+    z-index: 2;
+}
+
+.banners .controls-slider {
+    bottom: 1.6rem;
+    right: 11.6rem;
 }
